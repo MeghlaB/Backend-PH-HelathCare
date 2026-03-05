@@ -1,10 +1,11 @@
 import express, { Application } from "express";
-const app: Application = express();
+import app from "./app";
+
 
 const bootstrap = () => {
   try {
-    app.listen(process.env.PORT, () => {
-      console.log(`Server is running on http://localhost:${process.env.PORT}`);
+    app.listen(5000, () => {
+      console.log(`Server is running on http://localhost:5000`);
 
     })
   } catch (error) {
